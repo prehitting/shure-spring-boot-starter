@@ -1,0 +1,1 @@
+# shure-spring-boot-starter
