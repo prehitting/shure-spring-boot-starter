@@ -1,0 +1,6 @@
+shure:
+  security:
+    exposed:
+      - /**
+    anonymous:
+      - /**

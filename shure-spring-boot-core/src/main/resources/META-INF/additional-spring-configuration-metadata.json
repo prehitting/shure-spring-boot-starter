@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "shure.web.token.jwt.expire",
+      "type": "java.lang.String",
+      "description": "Description for shure.web.token.jwt.expire."
+    },
+    {
+      "name": "shure.web.token.jwt.key",
+      "type": "java.lang.String",
+      "description": "Description for shure.web.token.jwt.key."
+    },
+    {
+      "name": "shure.web.token.jwt.prefix",
+      "type": "java.lang.String",
+      "description": "Description for shure.web.token.jwt.prefix."
+    }
+  ]
+}

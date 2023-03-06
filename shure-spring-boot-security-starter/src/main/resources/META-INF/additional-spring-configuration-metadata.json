@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "shure.security.exposed",
+      "type": "java.util.List",
+      "description": "Description for shure.security.exposed."
+    },
+    {
+      "name": "shure.security.anonymous",
+      "type": "java.util.List",
+      "description": "Description for shure.security.anonymous."
+    }
+  ]
+}

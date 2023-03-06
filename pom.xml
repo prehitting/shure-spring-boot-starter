@@ -10,6 +10,9 @@
 
     <modules>
         <module>shure-spring-boot-security-starter</module>
+        <module>shure-spring-boot-core</module>
+        <module>shure-spring-boot-orm-starter</module>
+        <module>shure-framework-all</module>
     </modules>
 
     <artifactId>shure-spring-framework</artifactId>
@@ -18,6 +21,10 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <servlet-api.version>2.5</servlet-api.version>
+        <shure-spring-boot-core.verision>1.0</shure-spring-boot-core.verision>
+        <lombok.version>1.18.24</lombok.version>
+        <hutool.version>5.8.11</hutool.version>
     </properties>
 
     <dependencyManagement>
@@ -29,6 +36,56 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.shure</groupId>
+                <artifactId>shure-spring-boot-core</artifactId>
+                <version>${shure-spring-boot-core.verision}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
 </project>
